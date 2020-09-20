@@ -1,0 +1,28 @@
+.nav__main{
+    width: 100%;
+    &--logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:80px;
+        padding: 1em;
+        .log{
+            color: $main-blue;
+            font-weight: bold;
+        }
+    }
+    &--anchor{
+        display: flex;
+        justify-content: space-around;
+        .hebergement, .activity{
+            width: 50%;
+            text-align: center;
+            padding-bottom: 1em;
+            border-bottom: 2px solid $grey-color;
+        }
+        .hebergement{
+            color:$main-blue ;
+            border-bottom: 2px solid $main-blue;
+        }
+    }
+}
