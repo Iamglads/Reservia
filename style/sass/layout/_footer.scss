@@ -1,0 +1,13 @@
+footer {
+  padding: 2em;
+  background: $grey-color;
+  li {
+    list-style: none;
+    margin-left: 2em;
+    a {
+      &:hover {
+        color: $main-blue;
+      }
+    }
+  }
+}

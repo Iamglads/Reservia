@@ -1,3 +1,209 @@
+body {
+  margin: auto;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
 
+a {
+  text-decoration: none;
+  color: unset;
+  cursor: pointer;
+}
+
+.nav__main {
+  width: 100%;
+}
+.nav__main--logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 1em;
+}
+.nav__main--logo .log {
+  color: #0065FC;
+  font-weight: bold;
+}
+.nav__main--anchor {
+  display: flex;
+  justify-content: space-around;
+}
+.nav__main--anchor .hebergement, .nav__main--anchor .activity {
+  width: 50%;
+  text-align: center;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #F2F2F2;
+}
+.nav__main--anchor .hebergement {
+  color: #0065FC;
+  border-bottom: 2px solid #0065FC;
+}
+
+header {
+  padding: 1em;
+}
+header h1 {
+  font-size: 1.5em;
+}
+header .search .search-input {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 1px solid #F2F2F2;
+}
+header .search .search-input .fas {
+  padding: 1em;
+  margin: none;
+}
+header .search .search-input .fa-map-marker-alt {
+  background: #F2F2F2;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+header .search .search-input .fa-search {
+  border-radius: 15px;
+  background: #0065FC;
+  color: #ffffff;
+}
+header .search .search-input input {
+  padding: 1.5em;
+  border: none;
+  width: 100%;
+}
+header .filter {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0.5em;
+}
+header .filter .fas {
+  color: #0065FC;
+  background: #DEEBFF;
+  padding: 1em;
+  border-radius: 100%;
+}
+header .filter div {
+  width: auto;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+  border: 1px solid #F2F2F2;
+  border-radius: 25px;
+  padding-right: 1em;
+}
+header .infos {
+  display: flex;
+  align-items: center;
+}
+header .infos .fa-info {
+  color: #0065FC;
+  font-size: 10px;
+  padding: 0.8em;
+  border: 1px solid #F2F2F2;
+  border-radius: 100%;
+}
+
+.aside__mostPopular {
+  padding: 1em;
+  background: #F2F2F2;
+  height: auto;
+}
+.aside__mostPopular--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aside__mostPopular article {
+  height: 140px;
+  background: #ffffff;
+  padding: 0.3em;
+  display: flex;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 1px 1px #cacaca;
+}
+.aside__mostPopular article .image {
+  width: 40%;
+}
+.aside__mostPopular article .image img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.aside__mostPopular article .info {
+  margin-left: 20px;
+  width: 60%;
+}
+.aside__mostPopular article .info h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.aside__mostPopular article .info span {
+  color: #0065FC;
+  font-size: 10px;
+}
+
+.section__hebergement, .activity {
+  padding: 1em;
+  height: auto;
+}
+.section__hebergement article, .activity article {
+  height: 200px;
+  width: 100%;
+  background: #ffffff;
+  padding: 0.3em;
+  display: block;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 1px 1px #cacaca;
+}
+.section__hebergement article .image, .activity article .image {
+  width: 100%;
+  height: 60%;
+}
+.section__hebergement article .image img, .activity article .image img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.section__hebergement article .info, .activity article .info {
+  margin-left: 20px;
+  height: 40%;
+}
+.section__hebergement article .info h3, .activity article .info h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.section__hebergement article .info span, .activity article .info span {
+  color: #0065FC;
+  font-size: 10px;
+}
+.section__hebergement article .image-activity, .activity article .image-activity {
+  width: 100%;
+  height: 70%;
+}
+.section__hebergement article .image-activity img, .activity article .image-activity img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.section__hebergement article .image-activity .info, .activity article .image-activity .info {
+  padding: 1em;
+}
+
+footer {
+  padding: 2em;
+  background: #F2F2F2;
+}
+footer li {
+  list-style: none;
+  margin-left: 2em;
+}
+footer li a:hover {
+  color: #0065FC;
+}
 
 /*# sourceMappingURL=style.css.map */

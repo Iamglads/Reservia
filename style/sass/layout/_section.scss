@@ -1,3 +1,5 @@
+// aside 
+
 .aside__mostPopular{
     padding: 1em;
     background: $grey-color;
@@ -14,7 +16,7 @@
         display: flex;
         border-radius: 25px;
         margin-bottom: 10px;
-        box-shadow: 1px 1px 2px 1px $grey-color;
+        box-shadow: 1px 1px 1px 1px rgb(202, 202, 202);
         .image{
             width: 40%;
             img{
@@ -29,6 +31,7 @@
             width: 60%;
             h3{
                 font-size: 18px;
+                font-weight: bold;
             }
             span{
                 color: $main-blue;
@@ -37,3 +40,54 @@
         }
     }
 }
+
+.section__hebergement, .activity{
+    padding: 1em;
+    height: auto;
+    article{
+        height: 200px;
+        width: 100%;
+        background: #ffffff;
+        padding: .3em;
+        display: block;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        box-shadow: 1px 1px 1px 1px rgb(202, 202, 202);
+        .image{
+            width: 100%;
+            height: 60%;
+            img{
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+        }
+        .info{
+            margin-left: 20px;
+            height: 40%;
+            h3{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            span{
+                color: $main-blue;
+                font-size: 10px;
+            }
+        }
+        .image-activity{
+            width: 100%;
+            height: 70%;
+            img{
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+            .info{
+                padding: 1em;
+            }
+        }
+    }
+}
+
