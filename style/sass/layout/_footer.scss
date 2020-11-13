@@ -1,13 +1,18 @@
 footer {
-  padding: 2em;
+  display: flex;
+  align-items: center;
+  padding: 1em;
   background: $grey-color;
-  li {
-    list-style: none;
-    margin-left: 2em;
-    a {
-      &:hover {
-        color: $main-blue;
-      }
+  flex-wrap: wrap;
+  .footer__bloc{
+    width: 300px;
+  }
+  @include forMobile{
+    display: flex;
+  }
+  a{
+    &:hover{
+      color: $main-blue;
     }
   }
 }
