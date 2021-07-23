@@ -2,7 +2,13 @@ body{
     margin: auto;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    max-width: 1400px;
 }
+
+h1, h2, h3 {
+    font-weight: 900;
+}
+
 
 a{
     text-decoration: none;

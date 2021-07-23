@@ -1,6 +1,6 @@
-.nav__main{
+.nav{
     width: 100%;
-    &--logo{
+    .nav__logo{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -11,7 +11,7 @@
             font-weight: bold;
         }
     }
-    &--anchor{
+    .nav__mobile{
         display: flex;
         justify-content: space-around;
         .hebergement, .activity{
@@ -24,5 +24,34 @@
             color:$main-blue ;
             border-bottom: 2px solid $main-blue;
         }
+
+        @include forTablet{
+            display: none;
+        }
     }
+    .nav__desktop{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        .desktop{
+            width: 250px;
+            display: flex;
+            justify-content: space-around;
+            .nav__hebergement{
+                color: $main-blue;
+                //border-top: 2px solid $main-blue;
+                &:active{
+                    color: $main-blue;
+                }
+            }
+            @include forTabletMax{
+                display: none;
+            }
+        }
+
+        @include forTabletMax{
+            justify-content: flex-end;
+        }
+    }
+
 }

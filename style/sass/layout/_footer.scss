@@ -1,7 +1,8 @@
 footer {
+  height: auto;
   display: flex;
-  align-items: center;
-  padding: 1em;
+  align-items: flex-start;
+  padding: 2em;
   background: $grey-color;
   flex-wrap: wrap;
   .footer__bloc{
@@ -13,6 +14,7 @@ footer {
   a{
     &:hover{
       color: $main-blue;
+      font-weight: 700;
     }
   }
 }

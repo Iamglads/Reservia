@@ -4,3 +4,33 @@ $grey-color: #F2F2F2;
 
 //main font
 $font-raleway: 'Raleway', sans-serif;
+
+$breakpoints: (
+  mobile: 699px,
+  tablette: 768px,
+  desktop: 1200px
+);
+
+ @mixin forMobile {
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+      @content;
+    }
+  } 
+  
+  @mixin forTablet {
+    @media screen and (min-width: map-get($breakpoints, tablette)) {
+      @content;
+    }
+  }
+
+  @mixin forTabletMax {
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+      @content;
+    }
+  }
+
+  @mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      @content;
+    }
+  }

@@ -9,6 +9,8 @@ header {
       justify-content: space-between;
       border-radius: 15px;
       border: 1px solid $grey-color;
+      max-width: 500px;
+      min-width: 300px;
       .fas {
         padding: 1em;
         margin: none;
@@ -28,7 +30,12 @@ header {
        border: none;
        width: 100%;
       }
+
+      @include forTablet{
+        width: 40%;
+      }
     }
+    
   }
 
   .filter {
